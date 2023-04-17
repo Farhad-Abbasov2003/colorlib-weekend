@@ -1,0 +1,828 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/master-slides-02.jpg);
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  color: white;
+}
+nav .logo {
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+nav .logo h3 {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+}
+nav .logo span {
+  font-size: 0.8rem;
+}
+nav .nav-list {
+  width: 50rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-list li {
+  margin-left: 4rem;
+  width: 5rem;
+  height: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav .nav-list li:hover {
+  color: red;
+}
+nav .nav-icons i {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+nav .nav-icons i:hover {
+  color: red;
+}
+
+.header-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.header-text h2 {
+  font-size: 4rem;
+  font-family: "Courgette", cursive;
+  letter-spacing: 0.4rem;
+  cursor: context-menu;
+}
+.header-text h1 {
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.8rem;
+  cursor: context-menu;
+}
+.header-text button {
+  padding: 0.8rem 1.8rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.5rem;
+  color: red;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.header-text button:hover {
+  background-color: red;
+  color: white;
+}
+
+.entry {
+  display: flex;
+  padding: 0 15rem;
+  background-color: #efefef;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+}
+.entry .entry-text {
+  text-align: center;
+  padding-right: 5rem;
+  padding-top: 3.5rem;
+}
+.entry .entry-text h3 {
+  font-family: "Courgette", cursive;
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+.entry h2 {
+  text-transform: uppercase;
+  margin-top: 0rem;
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+.entry img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.entry img:hover {
+  transform: scale(1.1);
+}
+.entry .entry-img {
+  width: 40rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.entry p {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: gray;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+.entry a {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: sans-serif;
+  color: gray;
+  font-size: 0.75rem;
+}
+.entry a:hover {
+  color: red;
+}
+
+.discover {
+  width: 100%;
+  padding: 8rem 15rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg);
+}
+.discover .discover-text {
+  color: white;
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.discover .discover-text h3 {
+  font-family: "Courgette", cursive;
+  color: red;
+}
+.discover .discover-text h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: sans-serif;
+  letter-spacing: 0.5rem;
+}
+
+.section-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.section-cards-img {
+  width: 22rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.card {
+  width: 22rem;
+  height: 20rem;
+  margin: 4rem;
+}
+.card img {
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.card h3 {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card h3:hover {
+  color: red;
+}
+.card p {
+  margin-top: 1rem;
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+  font-family: sans-serif;
+  color: gray;
+  margin-bottom: 1.5rem;
+}
+.card a {
+  text-transform: uppercase;
+  color: black;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card a:hover {
+  color: red;
+}
+
+.menu {
+  background-color: #f4f1eb;
+  padding: 5rem 10rem;
+  height: 71rem;
+}
+
+.section-menu-text-title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.section-menu-text-title h3 {
+  font-family: "Courgette", cursive;
+  color: red;
+  font-size: 2rem;
+}
+.section-menu-text-title h2 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+.section-menu-imgs {
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  display: grid;
+  height: 10rem;
+  gap: 1.5rem;
+}
+.section-menu-imgs .menu-img-1,
+.section-menu-imgs .menu-img-2 {
+  grid-row: 1/3;
+}
+.section-menu-imgs .menu-img-5 {
+  grid-column: 1/3;
+}
+.section-menu-imgs .menu-img {
+  position: relative;
+  transition: 0.5s;
+}
+.section-menu-imgs .menu-img:hover {
+  transform: scale(1.1);
+}
+.section-menu-imgs .menu-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.section-menu-imgs .menu-img button {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: white;
+  opacity: 0.9;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  letter-spacing: 0.2rem;
+  font-family: "Poppins", sans-serif;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.section-menu-imgs .menu-img button:hover {
+  background-color: red;
+  color: white;
+}
+
+.upcoming-event {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-event-02.jpg);
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.upcoming-event > h3 {
+  color: red;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+  padding-top: 5rem;
+  letter-spacing: 0.1rem;
+}
+.upcoming-event h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+.upcoming-event .upcoming-event-card {
+  width: 65rem;
+  height: 20rem;
+  display: flex;
+  margin: 5rem 20rem;
+  border-radius: 1rem;
+  position: relative;
+  background-color: #fff;
+}
+.upcoming-event .text-1 {
+  width: 20rem;
+  left: -9rem;
+  top: 9rem;
+  padding: 0.5rem;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: red;
+  z-index: 1;
+  color: white;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-family: sans-serif;
+  transform: rotate(90deg);
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.upcoming-event .upcoming-img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: absolute;
+  padding: 12.5rem;
+  top: -12.5rem;
+  left: -13.5rem;
+}
+.upcoming-event .upcoming-img img {
+  width: 100%;
+  padding: 0 5rem;
+  height: 100%;
+  margin-left: -6rem;
+}
+.upcoming-event .text-2 h3 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding-top: 5rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+}
+.upcoming-event .text-2 {
+  position: absolute;
+  padding-left: 8rem;
+  padding-right: 2rem;
+  margin-left: 25rem;
+}
+.upcoming-event .text-2 p {
+  font-family: sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: gray;
+}
+.upcoming-event .text-2 button {
+  padding: 1rem;
+  border: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.reservation {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 10rem;
+  display: flex;
+  background-color: #efefef;
+  position: relative;
+}
+.reservation .text {
+  width: 45rem;
+  margin-right: 5rem;
+}
+.reservation .img {
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.reservation .img img {
+  border-radius: 1rem;
+  width: 100%;
+  transition: 0.5s;
+}
+.reservation .img img:hover {
+  transform: scale(1.1);
+}
+.reservation .title {
+  text-align: center;
+}
+.reservation .title h3 {
+  font-family: "Courgette", cursive;
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+.reservation .title h2 {
+  font-family: sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-top: 1rem;
+}
+.reservation .inputs {
+  flex-wrap: wrap;
+  margin: 2rem;
+  display: flex;
+  font-family: sans-serif;
+}
+.reservation .inputs input:nth-of-type(3),
+.reservation .inputs :nth-of-type(5) {
+  background-color: #efefef;
+}
+.reservation .inputs div {
+  font-family: "Montserrat", sans-serif;
+}
+.reservation .inputs .text-date {
+  position: absolute;
+  left: 8.5rem;
+}
+.reservation .inputs .text-name {
+  position: absolute;
+  left: 28.5rem;
+}
+.reservation .inputs .text-time {
+  position: absolute;
+  top: 19.5rem;
+  left: 8.5rem;
+}
+.reservation .inputs .text-phone {
+  left: 28.5rem;
+  top: 19.5rem;
+  position: absolute;
+}
+.reservation .inputs .text-people {
+  left: 8.5rem;
+  top: 25rem;
+  position: absolute;
+}
+.reservation .inputs .text-email {
+  position: absolute;
+  left: 28.5rem;
+  top: 25rem;
+}
+.reservation .inputs input {
+  width: 18rem;
+  margin: 1rem;
+  margin-top: 1.5rem;
+  height: 3rem;
+  padding: 1rem;
+  border: 1px solid rgb(167, 165, 165);
+  border-radius: 0.5rem;
+}
+.reservation .inputs .time-select {
+  font-size: 1rem;
+  color: gray;
+  position: absolute;
+  top: 21rem;
+  left: 8rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.2rem;
+}
+.reservation .inputs .people-select {
+  font-size: 1rem;
+  color: gray;
+  position: absolute;
+  top: 26.5rem;
+  left: 8rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.2rem;
+}
+
+.review {
+  text-align: center;
+  padding: 5rem 15rem;
+}
+.review h3 {
+  font-family: "Courgette", cursive;
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+.review h2 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+.review img {
+  width: 8rem;
+  border-radius: 50%;
+  border: 4px solid red;
+  margin: 2.5rem 0;
+}
+.review p {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+.review .name {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+.review .star-icons i {
+  color: #ec1d25;
+}
+
+.our-video {
+  background-position: center;
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg);
+}
+.our-video h3 {
+  color: red;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+}
+.our-video h2 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+.our-video .icon i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.blog {
+  padding: 5rem 5rem;
+}
+.blog .img-date {
+  position: absolute;
+  background-color: #4f4f52;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  bottom: 6rem;
+  left: 1rem;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+.blog .text-title {
+  text-align: center;
+}
+.blog .text-title h3 {
+  color: red;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+}
+.blog .text-title h2 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
+}
+.blog .cards {
+  display: flex;
+}
+.blog .card {
+  position: relative;
+  margin-left: 1rem;
+  width: 25rem;
+}
+.blog .card h3 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.blog .card .card-img {
+  width: 25rem;
+  height: 15rem;
+  background-color: blue;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.blog .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.blog .card a {
+  letter-spacing: 0.1rem;
+}
+.blog .card p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.register {
+  display: flex;
+  background-color: #efefef;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  gap: 2rem;
+}
+.register h4 {
+  font-family: "Poppins", sans-serif;
+}
+.register input {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+  width: 18rem;
+}
+.register i {
+  margin-left: -5rem;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+}
+.register button {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+  padding: 1rem 3.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  margin-left: 2rem;
+}
+
+.info {
+  background-color: #222222;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  padding: 5rem 5rem;
+}
+.info .contact {
+  width: 25rem;
+  height: 10rem;
+  color: white;
+}
+.info .contact h3 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+.info .contact ul li {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.5rem;
+}
+.info .contact ul li i {
+  padding-right: 0.5rem;
+}
+.info .latest {
+  width: 25rem;
+}
+.info .latest h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+}
+.info .latest ul li {
+  margin-top: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+.info .latest .latest-list-item-1 {
+  color: red;
+  font-weight: bolder;
+}
+.info .latest .latest-list-item-1 i {
+  color: white;
+}
+.info .latest .latest-list-item-2 {
+  color: rgb(220, 219, 219);
+}
+.info .latest .latest-list-item-3 a {
+  color: red;
+}
+.info .latest .latest-list-item-4 {
+  color: rgb(220, 219, 219);
+  margin-top: 1rem;
+}
+.info .gallery {
+  width: 28rem;
+  grid-row: 1/3;
+  grid-column: 3;
+}
+.info .gallery h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.info .gallery .imgs {
+  margin-top: 3rem;
+}
+.info .gallery .imgs img {
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.info .gallery .imgs img:hover {
+  opacity: 0.8;
+  background-color: red;
+}
+.info .times {
+  color: white;
+}
+.info .times h3 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.info .times ul {
+  margin-top: 2rem;
+}
+.info .times ul li {
+  margin-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.info .property {
+  width: 25rem;
+  font-family: "Montserrat", sans-serif;
+}
+.info .property .property-list-item-1 {
+  color: red;
+  font-weight: bolder;
+}
+.info .property .property-list-item-1 i {
+  color: white;
+  padding-right: 0.5rem;
+}
+.info .property .property-list-item-2 {
+  color: rgb(220, 219, 219);
+  padding-top: 0.5rem;
+}
+.info .property .property-list-item-2 a {
+  color: red;
+  padding-left: 0.3rem;
+  font-weight: bolder;
+}
+.info .property .property-list-item-3 {
+  color: rgb(220, 219, 219);
+  padding-top: 1rem;
+}
+
+.end {
+  background-color: #111111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+.end .icons i {
+  padding-left: 1.5rem;
+  font-size: 1.3rem;
+}
+.end .end-text {
+  display: flex;
+}
+.end .end-text .text-1 {
+  color: rgb(220, 219, 219);
+}
+.end .end-text .text-2 {
+  padding-left: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=main.css.map */
